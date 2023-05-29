@@ -1,0 +1,41 @@
+.R {
+  height: 750px;
+  margin-top: 60px;
+  border: 2px solid black;
+  padding: 1px;
+}
+.A {
+  background-color: blue;
+}
+.B {
+  background-color: gray;
+}
+.C {
+  background-color: white;
+}
+
+.project_logo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.add_project {
+  margin-top: 40px;
+  margin-left: 25px;
+}
+.help_logo {
+  margin-top: 490px;
+  margin-left: 18px;
+}
+.login_logo {
+  margin-top: 4px;
+  margin-left: 18px;
+}
+.pname {
+  font-weight: bolder;
+  font-size: x-large;
+  margin-top: 35px;
+}
+.menulist {
+  margin-top: 60px;
+  padding: 5px;
+}
