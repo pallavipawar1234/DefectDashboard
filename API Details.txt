@@ -1,0 +1,32 @@
+1) Project Jason -
+
+[{
+"Project": "Project Name";
+"Project Type": "Project Type";
+"Team Size": "Size";
+"Owner": "Owner Name";
+"Project Summary": "Summary";
+"Project Details": "details";
+}]
+
+
+2) Issue Jason -
+
+[{
+"Project": "Project Name";
+"Issue Type": "Project Type";
+"Severity": "Sev";
+"Reporter": "Owner Name";
+"Assignee": "Summary";
+"Issue Summary": "Summary";
+"Issue Details": "details";
+"Issue Logs": "logs";
+}]
+
+
+Project DB -
+
+Project Table 
+Issue Table
+User -
+
