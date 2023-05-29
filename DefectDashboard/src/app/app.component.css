@@ -1,0 +1,128 @@
+.R {
+  height: 750px;
+  margin-top: 60px;
+  border: 2px solid black;
+  padding: 1px;
+}
+.A {
+  background-color: blue;
+}
+.B {
+  background-color: gray;
+}
+.C {
+  background-color: white;
+}
+
+.project_logo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.add_project {
+  margin-top: 40px;
+  margin-left: 25px;
+}
+.help_logo {
+  margin-top: 490px;
+  margin-left: 18px;
+}
+.login_logo {
+  margin-top: 4px;
+  margin-left: 18px;
+}
+.pname {
+  font-weight: bolder;
+  font-size: x-large;
+  margin-top: 35px;
+  text-align: center;
+}
+.menulist {
+  margin-top: 60px;
+  padding: 5px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.menu_logo {
+  margin: 20px 0px 0px 910px;
+}
+table td {
+  position: relative;
+}
+.text1 {
+  position: absolute;
+  top: 55px;
+  font-weight: bolder;
+  font-size: small;
+  left: 25px;
+}
+.text2 {
+  position: absolute;
+  top: 55px;
+  font-weight: bolder;
+  font-size: small;
+  left: 30px;
+}
+.text3 {
+  position: absolute;
+  top: 55px;
+  font-weight: bolder;
+  font-size: small;
+  left: 23px;
+}
+.text4 {
+  position: absolute;
+  top: 55px;
+  font-weight: bolder;
+  font-size: small;
+  left: 40px;
+}
+.text5 {
+  position: absolute;
+  top: 55px;
+  font-weight: bolder;
+  font-size: small;
+  left: 45px;
+}
+.text6 {
+  position: absolute;
+  top: 55px;
+  font-weight: bolder;
+  font-size: small;
+  left: 50px;
+}
+.tabeldata {
+  margin-top: 10px;
+  border: 1px solid black;
+}
+.arrow {
+  transform: rotate(180deg);
+}
+.Chart1 {
+  font-weight: bolder;
+  position: absolute;
+  font-size: 30px;
+  margin: -150px 0px 0px 710px;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 1px red;
+}
+.Chart2 {
+  font-weight: bolder;
+  position: absolute;
+  font-size: 30px;
+  margin: 250px 0px 0px 40px;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 1px red;
+}
+.graphview {
+  margin: 100px 0px 0px 300px;
+  border: 1px solid black;
+  height: 300px;
+  width: 600px;
+}
+#chart {
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 0;
+}
