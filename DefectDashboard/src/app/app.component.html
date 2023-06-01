@@ -1,98 +1,13 @@
-<div class="container">
-  <div class="row R">
-    <div class="col-lg-1 col-md-1 col-sm-1 A">
-      <div class="project_logo"><img src="../assets/img/website-bug-70.png" height="70" width="70"
-          alt="project_logo Missing" /></div>
-      <div class="add_project"><img src="../assets/img/add-file-50.png" height="40" width="40"
-          alt="add_project_logo Missing" /></div>
-      <div class="help_logo"><img src="../assets/img/help-64.png" height="40" width="40" alt="help_logo Missing" />
-      </div>
-      <div class="login_logo"><img src="../assets/img/login-64.png" height="40" width="40" alt="login_logo Missing" />
-      </div>
+<div class="container R">
+  <div class="row">
+    <div class="col-1">
+      <homemenu></homemenu>
     </div>
-    <div class="col-lg-2 col-md-2 col-sm-2 B">
-      <div class="pname">
-        {{title}}
-      </div>
-      <div class="menulist">
-        <ul class="">
-          <li><a href="#">Create Project</a></li>
-          <li> <a href="#">Review Project</a></li>
-        </ul>
-      </div>
+    <div class="col-2">
+      <homeprojectmenu></homeprojectmenu>
     </div>
-    <div class="col-lg-9 col-md-9 col-sm-9 C">
-      <table class="tabeldata">
-        <tr>
-          <td>
-            <!-- Circle 1 -->
-            <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
-              <h2 class="text1">Create Project</h2>
-            </a>
-          </td>
-          <td>
-            <!-- Arrow 1 -->
-            <img class="arrow1" src="../assets/img/arrow-64.png">
-          </td>
-          <td>
-            <!-- Circle 2 -->
-            <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
-              <h2 class="text2">Create Issue</h2>
-            </a>
-          </td>
-          <td>
-            <!-- Arrow 2 -->
-            <img class="arrow2" src="../assets/img/arrow-64.png">
-          </td>
-          <td>
-            <!-- Circle 3 -->
-            <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
-              <h2 class="text3">Work In progress</h2>
-            </a>
-          </td>
-          <td rowspan="2"><img class="arrow1" src="../assets/img/u-turn64.png" height="120" width="120"></td>
-        </tr>
-        <tr>
-          <td>
-            <!-- Circle 4 -->
-            <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
-              <h2 class="text4">Feedback</h2>
-            </a>
-          </td>
-          <td>
-            <!-- Arrow 3 -->
-            <img class="arrow" src="../assets/img/arrow-64.png">
-          </td>
-          <td>
-            <!-- Circle 4 -->
-            <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
-              <h2 class="text5">Resolved</h2>
-            </a>
-          </td>
-          <td>
-            <!-- Arrow 4 -->
-            <img class="arrow" src="../assets/img/arrow-64.png">
-          </td>
-          <td>
-            <!-- Circle 4 -->
-            <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
-              <h2 class="text6">Review</h2>
-            </a>
-          </td>
-        </tr>
-      </table>
-      <label class="Chart1"><-- Work Flow</label>
-          <label class="Chart2">Usage --></label>
-          <table class="graphview">
-            <tr>
-              <td>
-                <div id="chart">
-                  <apx-chart [series]="pieChartOptionss.series" [chart]="pieChartOptionss.chart"
-                    [labels]="pieChartOptionss.labels" [responsive]="pieChartOptionss.responsive"></apx-chart>
-                </div>
-              </td>
-            </tr>
-          </table>
+    <div class="col">
+      <projectview></projectview>
     </div>
   </div>
-  <router-outlet></router-outlet>
+</div>

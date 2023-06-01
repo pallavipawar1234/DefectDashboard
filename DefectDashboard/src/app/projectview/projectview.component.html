@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="col-lg col-md-col-lg col-sm-col-lg C">
+    <div class="row">
+      <div class="col pathway">
+        <div class="pathlabel">
+          <a routerLink="home">{{pagename}} /</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <table class="tabeldata">
+          <tr>
+            <td>
+              <!-- Circle 1 -->
+              <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
+                <h2 class="text1">Create Project</h2>
+              </a>
+            </td>
+            <td>
+              <!-- Arrow 1 -->
+              <img class="arrow1" src="../assets/img/arrow-64.png">
+            </td>
+            <td>
+              <!-- Circle 2 -->
+              <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
+                <h2 class="text2">Create Issue</h2>
+              </a>
+            </td>
+            <td>
+              <!-- Arrow 2 -->
+              <img class="arrow2" src="../assets/img/arrow-64.png">
+            </td>
+            <td>
+              <!-- Circle 3 -->
+              <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
+                <h2 class="text3">Work In progress</h2>
+              </a>
+            </td>
+            <td rowspan="2"><img class="arrow1" src="../assets/img/u-turn64.png" height="120" width="120"></td>
+          </tr>
+          <tr>
+            <td>
+              <!-- Circle 4 -->
+              <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
+                <h2 class="text4">Feedback</h2>
+              </a>
+            </td>
+            <td>
+              <!-- Arrow 3 -->
+              <img class="arrow" src="../assets/img/arrow-64.png">
+            </td>
+            <td>
+              <!-- Circle 4 -->
+              <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
+                <h2 class="text5">Resolved</h2>
+              </a>
+            </td>
+            <td>
+              <!-- Arrow 4 -->
+              <img class="arrow" src="../assets/img/arrow-64.png">
+            </td>
+            <td>
+              <!-- Circle 4 -->
+              <a href=""> <img src="../assets/img/circle-100.png" height="140" width="140">
+                <h2 class="text6">Review</h2>
+              </a>
+            </td>
+          </tr>
+        </table>
+        <label class="Chart1"><-- Work Flow</label>
+            <label class="Chart2">Usage --></label>
+            <table class="graphview">
+              <tr>
+                <td>
+                  <div id="chart">
+                    <apx-chart [series]="pieChartOptionss.series" [chart]="pieChartOptionss.chart"
+                      [labels]="pieChartOptionss.labels" [responsive]="pieChartOptionss.responsive"></apx-chart>
+                  </div>
+                </td>
+              </tr>
+            </table>
+      </div>
+    </div>
+  </div>

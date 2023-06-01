@@ -12,6 +12,14 @@ import { ReviewIssueComponent } from './review-issue/review-issue.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { ProjectStatusPageComponent } from './project-status-page/project-status-page.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { HomemenuComponent } from './homemenu/homemenu.component';
+import { HomeprojectmenuComponent } from './homeprojectmenu/homeprojectmenu.component';
+import { ProjectviewComponent } from './projectview/projectview.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +31,20 @@ import { ProjectStatusPageComponent } from './project-status-page/project-status
     LoginPageComponent,
     RegistrationPageComponent,
     ProjectStatusPageComponent,
+    HomemenuComponent,
+    HomeprojectmenuComponent,
+    ProjectviewComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgApexchartsModule,
+    MatCardModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
