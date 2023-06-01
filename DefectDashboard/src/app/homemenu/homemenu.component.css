@@ -1,0 +1,20 @@
+.row {
+  height: 750px;
+  /* border: 2px solid black; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.A {
+  background-color: blue;
+}
+.project_logo {
+  margin: 5px;
+}
+.add_project {
+  margin: 50px 0px 0px 25px;
+}
+.help_logo {
+  margin: 475px 0px 0px 20px;
+}
+.login_logo {
+  margin: 15px 0px 0px 20px;
+}

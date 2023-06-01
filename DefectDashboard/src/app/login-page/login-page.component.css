@@ -1,0 +1,39 @@
+.Card {
+  margin: 40px;
+}
+
+.Card1 {
+  margin: 150px 0px 0px 0px;
+  height: 400px;
+  width: 450px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Card2 {
+  margin: -400px 0px 0px 450px;
+  height: 400px;
+  width: 450px;
+  border: 1px solid black;
+  background-color: #1b89f7;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title {
+  text-align: center;
+}
+.urldata1 {
+  text-decoration: none;
+  font-size: smaller;
+}
+.urldata2 {
+  text-decoration: none;
+  margin-left: 185px;
+  font-size: smaller;
+}
+button {
+  margin-left: 110px;
+  width: 100px;
+  background-color: #1b89f7;
+  font: bold;
+  color: whitesmoke;
+}
