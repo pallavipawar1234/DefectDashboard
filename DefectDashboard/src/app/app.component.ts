@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Defect Dashboard';
+
+  constructor() {}
+  pagename = 'Home >> Login';
+  pageid = 'false'; //
 }
