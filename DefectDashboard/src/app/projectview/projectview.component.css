@@ -85,13 +85,3 @@ a {
   margin: 30px auto;
   padding: 0;
 }
-.pathway {
-  background-color: blue;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.pathlabel {
-  margin: 10px;
-  font-weight: bold;
-}

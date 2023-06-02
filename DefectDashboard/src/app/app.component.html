@@ -7,7 +7,10 @@
       <homeprojectmenu></homeprojectmenu>
     </div>
     <div class="col">
-      <projectview></projectview>
+      <div class="row pathway"><a routerLink="./home" routerLinkActive="active">{{status}}</a></div>
+      <div class="row"> <router-outlet></router-outlet></div>
     </div>
   </div>
+
+
 </div>
