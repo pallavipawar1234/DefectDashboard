@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationStart, Router, UrlSegment } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Defect Dashboard';
+  status = '';
 
-  constructor() {}
-  pagename = 'Home >> Login';
-  pageid = 'false'; //
+  constructor(router: Router) {
+    console.log(router.routerState.snapshot);
+    // console.log(router.url); // to print only path eg:"/login"
+  }
 }

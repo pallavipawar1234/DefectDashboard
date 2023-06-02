@@ -7,18 +7,10 @@
       <homeprojectmenu></homeprojectmenu>
     </div>
     <div class="col">
-      <div class="col-6 pathway">
-        <div class="pathlabel">
-          <a routerLink="home">{{pagename}} >></a>
-        </div>
-      </div>
-      <div class="row">
-      </div>
-      <div *ngIf="pageid; then homepage else loginpage"></div>
-      <ng-template #homepage>
-        <projectview></projectview>
-      </ng-template>
-      <ng-template #loginpage><login-page></login-page></ng-template>
+      <div class="row pathway"><a routerLink="./home" routerLinkActive="active">{{status}}</a></div>
+      <div class="row"> <router-outlet></router-outlet></div>
     </div>
   </div>
+
+
 </div>

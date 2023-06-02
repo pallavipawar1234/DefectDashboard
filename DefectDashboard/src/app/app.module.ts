@@ -20,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomemenuComponent } from './homemenu/homemenu.component';
 import { HomeprojectmenuComponent } from './homeprojectmenu/homeprojectmenu.component';
 import { ProjectviewComponent } from './projectview/projectview.component';
+import { HelppageComponent } from './helppage/helppage.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ProjectviewComponent } from './projectview/projectview.component';
     HomemenuComponent,
     HomeprojectmenuComponent,
     ProjectviewComponent,
+    HelppageComponent,
   ],
   imports: [
     BrowserModule,
