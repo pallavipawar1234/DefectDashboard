@@ -15,12 +15,13 @@ import { ProjectStatusPageComponent } from './project-status-page/project-status
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { HomemenuComponent } from './homemenu/homemenu.component';
 import { HomeprojectmenuComponent } from './homeprojectmenu/homeprojectmenu.component';
 import { ProjectviewComponent } from './projectview/projectview.component';
 import { HelppageComponent } from './helppage/helppage.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -44,9 +45,11 @@ import { HelppageComponent } from './helppage/helppage.component';
     NgApexchartsModule,
     MatCardModule,
     FormsModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

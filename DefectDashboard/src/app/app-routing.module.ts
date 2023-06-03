@@ -5,6 +5,10 @@ import { RegistrationPageComponent } from './registration-page/registration-page
 import { ProjectviewComponent } from './projectview/projectview.component';
 import { CreateProjectComponent } from './create-project/create-project.component';
 import { HelppageComponent } from './helppage/helppage.component';
+import { ReviewProjectComponent } from './review-project/review-project.component';
+import { ProjectStatusPageComponent } from './project-status-page/project-status-page.component';
+import { CreateIssueComponent } from './create-issue/create-issue.component';
+import { ReviewIssueComponent } from './review-issue/review-issue.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,6 +17,10 @@ const routes: Routes = [
   { path: 'home', component: ProjectviewComponent },
   { path: 'create-project', component: CreateProjectComponent },
   { path: 'help-page', component: HelppageComponent },
+  { path: 'review-project', component: ReviewProjectComponent },
+  { path: 'review-issue', component: ReviewIssueComponent },
+  { path: 'project-status-page', component: ProjectStatusPageComponent },
+  { path: 'create-issue', component: CreateIssueComponent },
 ];
 
 @NgModule({

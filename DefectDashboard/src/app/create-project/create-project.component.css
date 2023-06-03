@@ -1,0 +1,40 @@
+.Card {
+  margin: 100px 20px 0px 10px;
+  height: 400px;
+  border: 1px black solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.TableName {
+  margin: 15px;
+  font-weight: bold;
+  font-size: larger;
+}
+.example-form1 {
+  min-width: 100px;
+  max-width: 500px;
+  width: 350px;
+  margin: 60px 0px 0px 10px;
+  padding: 20px;
+}
+.example-form2 {
+  min-width: 100px;
+  max-width: 500px;
+  width: 500px;
+  margin: -225px 0px 0px 430px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+button {
+  margin: 40px 0px 0px 780px;
+  background-color: blue;
+  color: whitesmoke;
+  width: 120px;
+}
+
+mat-label {
+  font-weight: 500;
+  color: black;
+}

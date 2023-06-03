@@ -6,21 +6,22 @@
           <div class="title">
             <h3>Welcome to DefectBoard</h3>
           </div>
-          <form class="Card">
+          <form class="Card" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                formControlName="username">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
             </div>
             <div class="mb-3 ">
               <a class="urldata1" href="">New User?</a>
               <a class="urldata2" href="">Forgot password ?</a>
             </div>
-            <button mat-raised-button>Login</button>
+            <button mat-raised-button type="Submit">Login</button>
           </form>
         </mat-card-content>
       </mat-card>

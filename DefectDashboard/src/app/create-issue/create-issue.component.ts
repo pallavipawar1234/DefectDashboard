@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-create-issue',
+  selector: 'create-issue',
   templateUrl: './create-issue.component.html',
-  styleUrls: ['./create-issue.component.css']
+  styleUrls: ['./create-issue.component.css'],
 })
 export class CreateIssueComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

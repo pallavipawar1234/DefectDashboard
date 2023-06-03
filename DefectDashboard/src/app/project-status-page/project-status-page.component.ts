@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-project-status-page',
+  selector: 'project-status-page',
   templateUrl: './project-status-page.component.html',
-  styleUrls: ['./project-status-page.component.css']
+  styleUrls: ['./project-status-page.component.css'],
 })
 export class ProjectStatusPageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
