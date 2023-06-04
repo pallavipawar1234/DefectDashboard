@@ -22,6 +22,7 @@ import { HomeprojectmenuComponent } from './homeprojectmenu/homeprojectmenu.comp
 import { ProjectviewComponent } from './projectview/projectview.component';
 import { HelppageComponent } from './helppage/helppage.component';
 import { MatIconModule } from '@angular/material/icon';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
