@@ -16,24 +16,32 @@ def fun(request):
     
     return
 
-class Create_Issue(APIView):
+class Create_Project(APIView):
     def get(self,request):
 
         return Response({"data":"data"},status=status.HTTP_200_OK)
     def post(self,request):
         # models
-        pdb.set_trace()
+        # pdb.set_trace()
         # requestedData = request.data
         # queryset = models.Project_Data.objects.filter(Project_Name = request.data['Project_Name'])
         # if not queryset.exists():
         json_data = request.body
         stream = io.BytesIO(json_data)
         pythondata = JSONParser().parse(stream)
-        serializer = Project_DataSerializer(data = pythondata)
-        if serializer.is_valid():
-            # serializer.save()
+        queryset = models.Project_Data.objects.filter(Project_Name = request.data['Project_Name'])
+        if len(queryset) == 0:
+            serializer = Project_DataSerializer(data = pythondata)
             res = {"msg":"data created"}
-            json_data = JSONRenderer().render(res)
+        else:
+            project_name = pythondata.get('Project_Name')
+            project_name_object = Project_Data.objects.get(Project_Name = project_name)
+            serializer = Project_DataSerializer(project_name_object,data = pythondata,partial = True)
+            res = {"msg":"data updated"}
+        if serializer.is_valid():
+            serializer.save()
+            response = res
+            json_data = JSONRenderer().render(response)
             return Response(json_data, content_type = 'application/json')
         json_data = JSONRenderer().render(serializer.errors)
         return Response(json_data, content_type = 'application/json')
