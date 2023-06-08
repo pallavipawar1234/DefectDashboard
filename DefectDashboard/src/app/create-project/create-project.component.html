@@ -1,1 +1,38 @@
-<p>create-project works!</p>
+<div class="Card">
+  <div class="TableName">
+    <label>Create Project</label>
+  </div>
+  <div class="example-form1">
+    <form [formGroup]="CreateProject" (ngSubmit)="onSubmit()">
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Project</mat-label>
+        <input matInput placeholder="e.g CSI-TOPS" formControlName="project">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Project Type</mat-label>
+        <input matInput placeholder="e.g  Production" formControlName="project_type">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Team Size</mat-label>
+        <input matInput placeholder="e.g  10" formControlName="team_size">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Project Owner</mat-label>
+        <input matInput placeholder="e.g  Mark C" formControlName="owner_name">
+      </mat-form-field>
+      <div class="example-form2">
+        <mat-form-field class="example-full-width">
+          <mat-label>Project Summary</mat-label>
+          <input matInput placeholder="e.g Issue Summary" formControlName="project_summary">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Project Details</mat-label>
+          <textarea matInput placeholder="Enter Issue Details" style="height: 70px;"
+            formControlName="project_details"></textarea>
+        </mat-form-field>
+      </div>
+      <button mat-raised-button type="Submit">Create</button>
+    </form>
+  </div>
+</div>

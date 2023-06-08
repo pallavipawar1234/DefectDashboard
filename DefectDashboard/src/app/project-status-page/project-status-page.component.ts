@@ -1,15 +1,43 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {
+  CdkDragDrop,
+  moveItemInArray,
+  transferArrayItem,
+} from '@angular/cdk/drag-drop';
+import { NgFor } from '@angular/common';
 
 @Component({
-  selector: 'app-project-status-page',
+  selector: 'project-status-page',
   templateUrl: './project-status-page.component.html',
-  styleUrls: ['./project-status-page.component.css']
+  styleUrls: ['./project-status-page.component.css'],
 })
-export class ProjectStatusPageComponent implements OnInit {
+export class ProjectStatusPageComponent {
+  todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
 
-  constructor() { }
+  wip = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
+  review = [
+    'Get up',
+    'Brush teeth',
+    'Take a shower',
+    'Check e-mail',
+    'Walk dog',
+  ];
+  done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
 
-  ngOnInit(): void {
+  drop(event: CdkDragDrop<string[]>) {
+    if (event.previousContainer === event.container) {
+      moveItemInArray(
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+    } else {
+      transferArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+    }
   }
-
 }

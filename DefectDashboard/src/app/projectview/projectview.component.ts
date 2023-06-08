@@ -22,7 +22,9 @@ export class ProjectviewComponent implements OnInit {
   pagename = 'Home';
   public pieChartOptionss!: Partial<ChartOptions> | any;
 
+  homepage;
   constructor() {
+    this.homepage = false;
     this.pieChartOptionss = {
       series: [10, 2, 3, 5],
       chart: {

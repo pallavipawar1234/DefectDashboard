@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'login-page',
@@ -7,5 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
   ngOnInit(): void {}
-  constructor() {}
+
+  loginForm = new FormGroup({
+    username: new FormControl('', [Validators.required]),
+    password: new FormControl(''),
+  });
+
+  constructor(private router: Router) {}
+
+  onSubmit() {
+    console.log(this.loginForm.value);
+    const userdata = localStorage.setItem(
+      'user',
+      JSON.stringify(this.loginForm.value)
+    );
+    this.router.navigate(['/home']);
+  }
 }

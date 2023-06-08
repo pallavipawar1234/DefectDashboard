@@ -8,10 +8,6 @@ import { NavigationStart, Router, UrlSegment } from '@angular/router';
 })
 export class AppComponent {
   title = 'Defect Dashboard';
-  status = '';
-
-  constructor(router: Router) {
-    console.log(router.routerState.snapshot);
-    // console.log(router.url); // to print only path eg:"/login"
-  }
+  status = 'Home >> Login';
+  constructor() {}
 }
