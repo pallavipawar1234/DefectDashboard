@@ -23,6 +23,8 @@ import { ProjectviewComponent } from './projectview/projectview.component';
 import { HelppageComponent } from './helppage/helppage.component';
 import { MatIconModule } from '@angular/material/icon';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
+import { BackendConnectService } from './Service/backend-connect.service';
 
 @NgModule({
   declarations: [
@@ -52,8 +54,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatButtonModule,
     MatIconModule,
     DragDropModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [BackendConnectService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

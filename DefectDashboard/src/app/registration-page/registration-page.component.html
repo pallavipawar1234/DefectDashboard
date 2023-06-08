@@ -1,1 +1,38 @@
-<p>registration-page works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <mat-card class="Card1">
+        <mat-card-content>
+          <div class="title">
+            <h3>Welcome to DefectBoard</h3>
+            <h4>Register yourself !!</h4>
+          </div>
+          <form class="Card" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Username -</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                formControlName="username">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email -</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                formControlName="email">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">New Password -</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+            </div>
+            <div class="mb-3">
+              <a class="urldata1" href="">Already User?</a>
+              <a class="urldata2" href="">Forgot password ?</a>
+            </div>
+            <button mat-raised-button type="Submit">Register</button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="Card2">
+        <mat-card-content></mat-card-content>
+      </mat-card>
+    </div>
+  </div>

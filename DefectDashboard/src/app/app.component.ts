@@ -9,4 +9,5 @@ import { NavigationStart, Router, UrlSegment } from '@angular/router';
 export class AppComponent {
   title = 'Defect Dashboard';
   status = 'Home >> Login';
+  constructor() {}
 }

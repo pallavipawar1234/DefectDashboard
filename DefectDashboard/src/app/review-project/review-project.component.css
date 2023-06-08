@@ -1,0 +1,17 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tableview {
+  margin: 90px 10px 0px 0px;
+}
+th {
+  background-color: #2f8ff7;
+}
+h2 {
+  font-weight: bold;
+  margin: 0px 0px 10px 390px;
+}

@@ -1,1 +1,45 @@
-<p>create-issue works!</p>
+<div class="Card">
+  <div class="TableName">
+    <label>Create Issue</label>
+  </div>
+  <div class="example-form1">
+    <form [formGroup]="CreateIssue" (ngSubmit)="onSubmit()">
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Project</mat-label>
+        <input matInput placeholder="e.g CSI-TOPS" formControlName="project">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Issue Type</mat-label>
+        <input matInput placeholder="e.g  Production" formControlName="issue_type">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Severity</mat-label>
+        <input matInput placeholder="e.g  10" formControlName="severity">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Reporter</mat-label>
+        <input matInput placeholder="e.g  Mark C" formControlName="reporter">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Assignee</mat-label>
+        <input matInput placeholder="e.g Issue Summary" formControlName="assignee">
+      </mat-form-field>
+      <div class="example-form2">
+        <mat-form-field class="example-full-width">
+          <mat-label>Issue Summary</mat-label>
+          <textarea matInput placeholder="Enter Issue Details" formControlName="issue_Summary"></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Issue Details</mat-label>
+          <textarea matInput placeholder="Enter Issue Details" style="height: 70px;"
+            formControlName="issue_details"></textarea>
+        </mat-form-field>
+        <form [formGroup]="CreateIssue" class="log">
+          <input type="file" name="logs" id="log" formControlName="log">
+        </form>
+      </div>
+      <button mat-raised-button type="Submit">Create</button>
+    </form>
+  </div>
+</div>

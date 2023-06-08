@@ -1,1 +1,24 @@
-<p>review-issue works!</p>
+<p>review-project works!</p>
+<div class="tableview table-responsive" style="height: 590px; overflow: auto;">
+  <h2>Review Issue</h2>
+  <table class=" table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Company</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of Data">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.company.name}}</td>
+        <td>{{item.address.street}},{{item.address.city}},{{item.address.zipcode}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

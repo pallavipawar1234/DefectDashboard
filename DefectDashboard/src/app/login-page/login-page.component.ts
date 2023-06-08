@@ -19,6 +19,10 @@ export class LoginPageComponent implements OnInit {
 
   onSubmit() {
     console.log(this.loginForm.value);
-    this.router.navigate(['/create-project']);
+    const userdata = localStorage.setItem(
+      'user',
+      JSON.stringify(this.loginForm.value)
+    );
+    this.router.navigate(['/home']);
   }
 }

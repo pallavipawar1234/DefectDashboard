@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homeprojectmenu.component.css'],
 })
 export class HomeprojectmenuComponent implements OnInit {
-  constructor() {}
+  homepage;
+  constructor() {
+    this.homepage = false;
+  }
 
   ngOnInit(): void {}
   title = 'Defect Dashboard';
