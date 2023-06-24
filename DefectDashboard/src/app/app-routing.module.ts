@@ -1,3 +1,4 @@
+import { AuthGuard } from './Auth/auth.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -13,14 +14,38 @@ import { ReviewIssueComponent } from './review-issue/review-issue.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'login', component: LoginPageComponent },
-  { path: 'registration', component: RegistrationPageComponent },
+  {
+    path: 'registration',
+    component: RegistrationPageComponent,
+    canActivate: [AuthGuard],
+  },
   { path: 'home', component: ProjectviewComponent },
-  { path: 'create-project', component: CreateProjectComponent },
+  {
+    path: 'create-project',
+    component: CreateProjectComponent,
+    canActivate: [AuthGuard],
+  },
   { path: 'help-page', component: HelppageComponent },
-  { path: 'review-project', component: ReviewProjectComponent },
-  { path: 'review-issue', component: ReviewIssueComponent },
-  { path: 'project-status-page', component: ProjectStatusPageComponent },
-  { path: 'create-issue', component: CreateIssueComponent },
+  {
+    path: 'review-project',
+    component: ReviewProjectComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'review-issue',
+    component: ReviewIssueComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'project-status-page',
+    component: ProjectStatusPageComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'create-issue',
+    component: CreateIssueComponent,
+    canActivate: [AuthGuard],
+  },
 ];
 
 @NgModule({
