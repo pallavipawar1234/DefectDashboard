@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, CanActivate } from '@angular/router';
+import { BackendConnectService } from '../Service/backend-connect.service';
+import { BehaviorSubject } from 'rxjs';
+import { AuthGuard } from '../Auth/auth.guard';
 
 @Component({
   selector: 'login-page',
@@ -15,14 +18,21 @@ export class LoginPageComponent implements OnInit {
     password: new FormControl(''),
   });
 
-  constructor(private router: Router) {}
+  constructor(private route: Router, private user: BackendConnectService) {}
 
   onSubmit() {
     console.log(this.loginForm.value);
-    const userdata = localStorage.setItem(
-      'user',
-      JSON.stringify(this.loginForm.value)
-    );
-    this.router.navigate(['/home']);
+    let name = this.loginForm.value.username;
+    let pass = this.loginForm.value.password;
+    console.log(name, pass);
+    console.log(this.user.login(name, pass));
+
+    if (this.user.login(name, pass)) {
+      alert('Logged In Successfully !!');
+      this.route.navigate(['home']);
+    } else {
+      alert('Invalid Username & Password !!');
+      this.route.navigate(['login']);
+    }
   }
 }

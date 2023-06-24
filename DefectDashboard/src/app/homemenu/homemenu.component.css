@@ -4,7 +4,7 @@
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .A {
-  background-color: blue;
+  background-color: #207ad1;
 }
 .project_logo {
   margin: 5px;
@@ -13,8 +13,10 @@
   margin: 50px 0px 0px 25px;
 }
 .help_logo {
-  margin: 475px 0px 0px 20px;
+  margin: 455px 0px 0px 20px;
 }
 .login_logo {
-  margin: 15px 0px 0px 20px;
+  margin: 10px 0px 0px 20px;
+  font-weight: bold;
+  color: black;
 }
